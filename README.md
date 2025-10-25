@@ -1,356 +1,128 @@
 # 🎯 Quiz Master - Dynamic Quiz Game
 
-A modern, interactive quiz game built with React, TypeScript, Vite, and the LiveMenu UI component library. Test your knowledge across multiple categories with timed questions, instant feedback, and a competitive leaderboard!
-
-![React](https://img.shields.io/badge/React-19.1.1-61DAFB?logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-3178C6?logo=typescript)
-![Vite](https://img.shields.io/badge/Vite-7.1.7-646CFF?logo=vite)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?logo=tailwind-css)
-
-## ✨ Features
-
-### Core Features
-- **📚 15 Diverse Questions** - Covering Geography, Science, History, Literature, Technology, Mathematics, and more
-- **⏱️ Timed Challenges** - Each question has a time limit based on difficulty level
-- **✅ Instant Feedback** - Get immediate visual feedback on your answers
-- **🎨 Beautiful UI** - Modern, responsive design using LiveMenu UI components
-- **🌓 Dark Mode Support** - Seamless light/dark theme switching
-- **📊 Real-time Score Tracking** - See your progress throughout the quiz
-- **🏆 Leaderboard System** - Track and display top 10 high scores
-- **💾 Persistent Storage** - Scores saved to localStorage
-- **🎯 Difficulty Indicators** - Questions categorized as Easy, Medium, or Hard
-- **📱 Fully Responsive** - Works perfectly on all device sizes
-
-### User Experience
-- **Smooth Animations** - Polished transitions and visual effects
-- **Error Handling** - Graceful error management for missing or invalid data
-- **Accessibility** - Semantic HTML and ARIA attributes
-- **Toast Notifications** - Success and error messages with LiveMenu UI toasts
-- **Progress Indicators** - Visual progress bars for questions and timer
-- **Category Badges** - Color-coded badges for question categories
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js (v18 or higher)
-- npm or yarn
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd web3bridge-cohort-xiv-pre-qualification-exercise
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server**
-   ```bash
-   npm run dev
-   ```
-
-4. **Open your browser**
-   Navigate to `http://localhost:5200`
-
-### Build for Production
-
-```bash
-npm run build
-```
-
-The optimized production build will be in the `dist` folder.
-
-### Preview Production Build
-
-```bash
-npm run preview
-```
+A modern, interactive quiz game built with React, TypeScript, and LiveMenu UI. Test your knowledge across multiple categories with timed questions, instant feedback, and a competitive leaderboard!
 
 ## 🎮 How to Play
 
-1. **Start the Quiz** - Click the "Start Quiz" button on the welcome screen
-2. **Read the Question** - Each question displays with a category badge and difficulty level
-3. **Beat the Timer** - Select your answer before time runs out
-4. **Submit Answer** - Click "Submit Answer" to check if you're correct
-5. **Get Feedback** - Instant visual feedback shows correct/incorrect answers
-6. **Progress Through** - Continue through all questions
-7. **View Results** - See your final score and performance metrics
-8. **Save Your Score** - High scores can be saved to the leaderboard
-9. **Challenge Again** - Play again to beat your previous score!
+### Getting Started
+1. **Launch the Game** - Open the application in your browser
+2. **Read the Instructions** - The welcome screen explains the game mechanics
+3. **Start Your Quiz** - Click "Start Quiz" to begin with 10 random questions
 
-## 📁 Project Structure
+### Gameplay
+1. **Read the Question** - Each question displays with:
+   - Category badge (Geography, Science, History, etc.)
+   - Difficulty level (Easy, Medium, Hard)
+   - Time limit countdown timer
+   - Progress bar showing your position
 
-```
-src/
-├── components/
-│   └── quiz/
-│       ├── Quiz.tsx              # Main quiz container with game logic
-│       ├── Question.tsx          # Question display component
-│       ├── AnswerOption.tsx      # Individual answer option
-│       ├── Timer.tsx             # Countdown timer with visual progress
-│       ├── ScoreDisplay.tsx      # Real-time score tracker
-│       ├── QuizResult.tsx        # Final results screen
-│       └── Leaderboard.tsx       # High scores display
-├── data/
-│   └── questions.json            # Quiz questions database
-├── types/
-│   └── quiz.ts                   # TypeScript type definitions
-├── utils/
-│   └── storage.ts                # localStorage utility functions
-├── App.tsx                       # Main app component
-├── main.tsx                      # App entry point with providers
-├── index.css                     # Global styles with Tailwind
-└── App.css                       # Component-specific styles
-```
-
-## 🎨 Component Architecture
-
-### Quiz.tsx (Main Container)
-- Manages game state (welcome, playing, result)
-- Handles question navigation
-- Processes answer submissions
-- Manages leaderboard data
-- Error handling and data validation
-
-### Question.tsx
-- Displays current question with metadata
-- Shows timer and progress bar
-- Renders answer options
-- Handles answer selection
-
-### AnswerOption.tsx
-- Individual answer button
-- Visual feedback for correct/incorrect
-- Disabled state after answering
-
-### Timer.tsx
-- Countdown timer with color-coded urgency
-- Progress bar visualization
-- Auto-submit when time expires
-
-### ScoreDisplay.tsx
-- Real-time score tracking
-- Progress through quiz
-- Accuracy percentage
-
-### QuizResult.tsx
-- Final score display
-- Performance message based on accuracy
-- Save to leaderboard option
-- Play again functionality
-
-### Leaderboard.tsx
-- Top 10 scores display
-- Medal icons for top 3
-- Clear leaderboard option
-- Date/time formatting
-
-## 🗃️ Data Structure
-
-### Question Format
-```typescript
-{
-  "id": "q1",
-  "question": "What is the capital of France?",
-  "category": "Geography",
-  "difficulty": "easy",
-  "timeLimit": 15,
-  "answers": [
-    { "id": "a1", "text": "London", "isCorrect": false },
-    { "id": "a2", "text": "Paris", "isCorrect": true },
-    { "id": "a3", "text": "Berlin", "isCorrect": false },
-    { "id": "a4", "text": "Madrid", "isCorrect": false }
-  ]
-}
-```
-
-### Player Score Format
-```typescript
-{
-  "name": "Player Name",
-  "score": 12,
-  "totalQuestions": 15,
-  "percentage": 80,
-  "date": "2025-10-25T10:30:00.000Z"
-}
-```
-
-## 🛠️ Technologies Used
-
-### Core Technologies
-- **React 19.1.1** - UI library
-- **TypeScript 5.9.3** - Type safety
-- **Vite 7.1.7** - Build tool and dev server
-- **Tailwind CSS 3.4** - Utility-first CSS framework
-
-### UI Library
-- **@codearemo/livemenu-ui** - Comprehensive React component library
-  - LiveMenuButton - Multiple variants and sizes
-  - LiveMenuCard - Content containers
-  - LiveMenuInput - Form inputs
-  - LiveMenuBadge - Status indicators
-  - LiveMenuAlert - Error/info messages
-  - LiveMenuThemeProvider - Dark mode support
-  - LiveMenuToastProvider - Toast notifications
-  - LiveMenuThemeToggle - Theme switcher
-
-### Additional Libraries
-- **lucide-react** - Beautiful icon set
-- **@reduxjs/toolkit** - State management (if needed)
-- **react-redux** - Redux bindings
-
-## 🎨 Customization
-
-### Adding Questions
-Edit `src/data/questions.json` to add or modify questions:
-```json
-{
-  "questions": [
-    {
-      "id": "unique-id",
-      "question": "Your question here?",
-      "category": "Category Name",
-      "difficulty": "easy|medium|hard",
-      "timeLimit": 15,
-      "answers": [
-        { "id": "a1", "text": "Option 1", "isCorrect": false },
-        { "id": "a2", "text": "Option 2", "isCorrect": true }
-      ]
-    }
-  ]
-}
-```
-
-### Customizing Colors
-The app uses the LiveMenu UI color palette defined in `tailwind.config.js`:
-- Primary (Orange): `#ff7c30`
-- Success (Green): For correct answers
-- Danger (Red): For incorrect answers
-- Warning (Amber): For time warnings
-- Info (Blue): For information
-
-### Adjusting Difficulty
-- **Easy**: 15 seconds per question
-- **Medium**: 20 seconds per question
-- **Hard**: 25 seconds per question
-
-Modify these in `questions.json` for each question.
-
-### Leaderboard Settings
-Edit `src/utils/storage.ts` to change:
-```typescript
-const MAX_LEADERBOARD_ENTRIES = 10; // Change to desired number
-```
-
-## 🔧 Configuration Files
-
-### tailwind.config.js
-- Theme configuration
-- Color palette
-- Content paths
-- Dark mode settings
-- Safelist patterns for dynamic classes
-
-### vite.config.ts
-- Server port (5200)
-- Host settings
-- Build optimizations
-
-### tsconfig.json
-- TypeScript compiler options
-- Module resolution
-- Path aliases
-
-## 🎯 Key Features Explained
-
-### Timer System
-- Each question has a custom time limit
-- Color-coded urgency (green → yellow → red)
-- Animated progress bar
-- Auto-submit when time expires
+2. **Select Your Answer** - Click on one of the four answer options
+3. **Submit Your Choice** - Click "Submit Answer" to confirm your selection
+4. **Get Instant Feedback** - See immediately if you're correct or incorrect
+5. **Continue to Next** - Click "Next Question" to proceed
+6. **Complete the Quiz** - Answer all 10 questions to see your final score
 
 ### Scoring System
-- 1 point per correct answer
-- No penalty for incorrect answers
-- Percentage calculation
-- Performance message based on score
+- **1 Point** for each correct answer
+- **No Penalty** for incorrect answers
+- **Percentage Score** calculated based on correct answers
+- **Performance Rating** based on your final percentage
 
-### Leaderboard Logic
-- Stores top 10 scores
-- Sorted by score (descending)
-- Persistent in localStorage
-- Only high scores can be saved
+## ✨ Features
 
-### Error Handling
-- Graceful handling of missing questions
-- Invalid data detection
-- User-friendly error messages
-- Fallback states for edge cases
+### Core Game Features
+- **📚 15+ Diverse Questions** - Covering Geography, Science, History, Literature, Technology, Mathematics, and more
+- **🎲 Random Selection** - Each quiz session contains 10 randomly selected questions from the full pool
+- **⏱️ Timed Challenges** - Each question has a time limit based on difficulty:
+  - Easy: 15 seconds
+  - Medium: 20 seconds  
+  - Hard: 25 seconds
+- **✅ Instant Feedback** - Get immediate visual feedback on your answers with color-coded responses
+- **📊 Real-time Score Tracking** - See your current score and progress throughout the quiz
 
-## 🚀 Performance Optimizations
+### Visual & UI Features
+- **🎨 Beautiful Design** - Modern, clean interface with smooth animations
+- **🌓 Dark Mode Support** - Toggle between light and dark themes
+- **📱 Fully Responsive** - Works perfectly on desktop, tablet, and mobile devices
+- **🎯 Difficulty Indicators** - Color-coded badges show question difficulty
+- **📈 Progress Visualization** - Visual progress bars for questions and timer
+- **🏆 Medal System** - Special icons for top 3 leaderboard positions
 
-- **Code Splitting** - Components loaded as needed
-- **Lazy Loading** - Images and assets optimized
-- **Memoization** - React hooks prevent unnecessary re-renders
-- **Efficient State Management** - Minimal re-renders
-- **Tailwind Purging** - Unused CSS removed in production
+### Leaderboard System
+- **🏆 High Score Tracking** - Save your best scores to the leaderboard
+- **📊 Top 10 Display** - View the highest scores from all players
+- **💾 Persistent Storage** - Scores saved locally and survive page refreshes
+- **🎖️ Achievement Recognition** - Special recognition for qualifying scores
+- **🗑️ Clear Option** - Reset leaderboard when needed
 
-## 📱 Responsive Design
+### User Experience Features
+- **🔄 Play Again** - Start a new quiz with fresh random questions
+- **📝 Score Saving** - Enter your name to save qualifying scores
+- **🎊 Performance Messages** - Encouraging feedback based on your performance
+- **⚡ Smooth Transitions** - Polished animations and visual effects
+- **🔔 Toast Notifications** - Success and error messages for user actions
+- **🛡️ Error Handling** - Graceful handling of any technical issues
 
-- **Mobile First** - Optimized for small screens
-- **Tablet Friendly** - Adapts to medium screens
-- **Desktop Enhanced** - Takes advantage of larger displays
-- **Touch Friendly** - Large tap targets for mobile
+### Accessibility Features
+- **♿ Keyboard Navigation** - Full keyboard support for all interactions
+- **🎯 Large Touch Targets** - Easy to tap on mobile devices
+- **📖 Clear Typography** - Readable fonts and proper contrast
+- **🔊 Visual Feedback** - Clear visual indicators for all states
 
-## 🌓 Dark Mode
+## 🎯 Game Rules
 
-- System preference detection
-- Manual toggle available
-- Persistent theme preference
-- Smooth transitions between themes
+### Question Format
+- Each quiz contains exactly **10 questions**
+- Questions are selected **randomly** from a larger pool
+- Each question has **4 multiple choice answers**
+- Only **1 answer is correct** per question
 
-## 🔐 Data Persistence
+### Timer Rules
+- Each question has a **time limit** based on difficulty
+- Timer shows **countdown** with color-coded urgency
+- If time runs out, the question is **automatically marked incorrect**
+- Timer **resets** for each new question
 
-- Leaderboard stored in localStorage
-- Theme preference saved
-- Data survives page refreshes
-- Easy to clear via UI
+### Scoring Rules
+- **+1 point** for each correct answer
+- **0 points** for incorrect answers or timeouts
+- **No negative points** for wrong answers
+- Final score is your **total correct answers out of 10**
 
-## 🐛 Troubleshooting
+### Leaderboard Rules
+- Only **high scores** can be saved to the leaderboard
+- Leaderboard stores **top 10 scores** only
+- Scores are **sorted by highest first**
+- **Tie-breaking** by date (newer scores rank higher)
 
-### Questions not loading?
-- Check `src/data/questions.json` exists
-- Verify JSON is valid
-- Check browser console for errors
+## 🏆 Performance Ratings
 
-### Styles not working?
-- Ensure Tailwind CSS is properly configured
-- Check `tailwind.config.js` content paths
-- Verify LiveMenu UI stylesheet is imported
+Based on your final score percentage:
 
-### Dark mode not working?
-- Ensure `LiveMenuThemeProvider` wraps the app
-- Check `tailwind.config.js` has `darkMode: 'class'`
+- **90-100%** - 🏆 "Outstanding! You're a quiz master!"
+- **80-89%** - 🥇 "Excellent work! Great job!"
+- **70-79%** - 🥈 "Good job! Well done!"
+- **60-69%** - 🥉 "Not bad! Keep practicing!"
+- **Below 60%** - 💪 "Keep trying! Practice makes perfect!"
 
-## 📄 License
+## 🎮 Tips for Success
 
-This project is open source and available under the MIT License.
+1. **Read Carefully** - Take time to understand each question
+2. **Use Process of Elimination** - Rule out obviously wrong answers
+3. **Trust Your Instincts** - Your first choice is often correct
+4. **Manage Your Time** - Don't rush, but don't overthink
+5. **Stay Calm** - Take deep breaths if you feel pressured
+6. **Learn from Mistakes** - Review incorrect answers to improve
+7. **Practice Regularly** - Play multiple sessions to improve
 
-## 🙏 Acknowledgments
+## 🚀 Getting Started
 
-- **LiveMenu UI** - Component library by @codearemo
-- **Lucide** - Beautiful icon set
-- **Tailwind CSS** - Utility-first CSS framework
-- **Vite** - Next generation frontend tooling
-
-## 📧 Contact
-
-For questions or feedback, please open an issue in the repository.
+1. **Open the Application** - Navigate to the quiz in your browser
+2. **Choose Your Theme** - Toggle between light and dark mode
+3. **Start Playing** - Click "Start Quiz" to begin your first session
+4. **Challenge Yourself** - Try to beat your high score!
+5. **Compete with Friends** - Share your scores and challenge others
 
 ---
 
-Made with ❤️ using React + TypeScript + Vite + LiveMenu UI
+**Good luck and have fun! 🎯✨**
