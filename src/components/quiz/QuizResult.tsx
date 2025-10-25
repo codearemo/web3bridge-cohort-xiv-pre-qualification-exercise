@@ -116,7 +116,7 @@ export const QuizResult: React.FC<QuizResultProps> = ({
                   type="text"
                   placeholder="Enter your name"
                   value={playerName}
-                  onChange={(e) => setPlayerName(e.target.value)}
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPlayerName(e.target.value)}
                   fullWidth
                   className="flex-1"
                 />
