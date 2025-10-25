@@ -1,0 +1,410 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is the capital of France?",
+      "category": "Geography",
+      "difficulty": "easy",
+      "timeLimit": 15,
+      "answers": [
+        { "id": "a1", "text": "London", "isCorrect": false },
+        { "id": "a2", "text": "Paris", "isCorrect": true },
+        { "id": "a3", "text": "Berlin", "isCorrect": false },
+        { "id": "a4", "text": "Madrid", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Which planet is known as the Red Planet?",
+      "category": "Science",
+      "difficulty": "easy",
+      "timeLimit": 15,
+      "answers": [
+        { "id": "a1", "text": "Venus", "isCorrect": false },
+        { "id": "a2", "text": "Mars", "isCorrect": true },
+        { "id": "a3", "text": "Jupiter", "isCorrect": false },
+        { "id": "a4", "text": "Saturn", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "What is the largest ocean on Earth?",
+      "category": "Geography",
+      "difficulty": "easy",
+      "timeLimit": 15,
+      "answers": [
+        { "id": "a1", "text": "Atlantic Ocean", "isCorrect": false },
+        { "id": "a2", "text": "Indian Ocean", "isCorrect": false },
+        { "id": "a3", "text": "Pacific Ocean", "isCorrect": true },
+        { "id": "a4", "text": "Arctic Ocean", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Who painted the Mona Lisa?",
+      "category": "Art",
+      "difficulty": "medium",
+      "timeLimit": 20,
+      "answers": [
+        { "id": "a1", "text": "Vincent van Gogh", "isCorrect": false },
+        { "id": "a2", "text": "Pablo Picasso", "isCorrect": false },
+        { "id": "a3", "text": "Leonardo da Vinci", "isCorrect": true },
+        { "id": "a4", "text": "Michelangelo", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "What is the speed of light in vacuum?",
+      "category": "Science",
+      "difficulty": "medium",
+      "timeLimit": 20,
+      "answers": [
+        { "id": "a1", "text": "299,792,458 m/s", "isCorrect": true },
+        { "id": "a2", "text": "150,000,000 m/s", "isCorrect": false },
+        { "id": "a3", "text": "500,000,000 m/s", "isCorrect": false },
+        { "id": "a4", "text": "199,792,458 m/s", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "In which year did World War II end?",
+      "category": "History",
+      "difficulty": "medium",
+      "timeLimit": 20,
+      "answers": [
+        { "id": "a1", "text": "1943", "isCorrect": false },
+        { "id": "a2", "text": "1944", "isCorrect": false },
+        { "id": "a3", "text": "1945", "isCorrect": true },
+        { "id": "a4", "text": "1946", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "What is the smallest prime number?",
+      "category": "Mathematics",
+      "difficulty": "easy",
+      "timeLimit": 15,
+      "answers": [
+        { "id": "a1", "text": "0", "isCorrect": false },
+        { "id": "a2", "text": "1", "isCorrect": false },
+        { "id": "a3", "text": "2", "isCorrect": true },
+        { "id": "a4", "text": "3", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q8",
+      "question": "Which programming language is known as the 'language of the web'?",
+      "category": "Technology",
+      "difficulty": "easy",
+      "timeLimit": 15,
+      "answers": [
+        { "id": "a1", "text": "Python", "isCorrect": false },
+        { "id": "a2", "text": "Java", "isCorrect": false },
+        { "id": "a3", "text": "JavaScript", "isCorrect": true },
+        { "id": "a4", "text": "C++", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q9",
+      "question": "What is the chemical symbol for gold?",
+      "category": "Science",
+      "difficulty": "medium",
+      "timeLimit": 20,
+      "answers": [
+        { "id": "a1", "text": "Go", "isCorrect": false },
+        { "id": "a2", "text": "Gd", "isCorrect": false },
+        { "id": "a3", "text": "Au", "isCorrect": true },
+        { "id": "a4", "text": "Ag", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q10",
+      "question": "Who wrote 'Romeo and Juliet'?",
+      "category": "Literature",
+      "difficulty": "easy",
+      "timeLimit": 15,
+      "answers": [
+        { "id": "a1", "text": "Charles Dickens", "isCorrect": false },
+        { "id": "a2", "text": "William Shakespeare", "isCorrect": true },
+        { "id": "a3", "text": "Jane Austen", "isCorrect": false },
+        { "id": "a4", "text": "Mark Twain", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q11",
+      "question": "What is the square root of 144?",
+      "category": "Mathematics",
+      "difficulty": "easy",
+      "timeLimit": 15,
+      "answers": [
+        { "id": "a1", "text": "10", "isCorrect": false },
+        { "id": "a2", "text": "11", "isCorrect": false },
+        { "id": "a3", "text": "12", "isCorrect": true },
+        { "id": "a4", "text": "13", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q12",
+      "question": "Which country is home to the kangaroo?",
+      "category": "Geography",
+      "difficulty": "easy",
+      "timeLimit": 15,
+      "answers": [
+        { "id": "a1", "text": "New Zealand", "isCorrect": false },
+        { "id": "a2", "text": "Australia", "isCorrect": true },
+        { "id": "a3", "text": "South Africa", "isCorrect": false },
+        { "id": "a4", "text": "India", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q13",
+      "question": "What does HTTP stand for?",
+      "category": "Technology",
+      "difficulty": "medium",
+      "timeLimit": 20,
+      "answers": [
+        {
+          "id": "a1",
+          "text": "HyperText Transfer Protocol",
+          "isCorrect": true
+        },
+        {
+          "id": "a2",
+          "text": "High Transfer Text Protocol",
+          "isCorrect": false
+        },
+        {
+          "id": "a3",
+          "text": "HyperText Transmission Protocol",
+          "isCorrect": false
+        },
+        {
+          "id": "a4",
+          "text": "High Tech Transfer Protocol",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "question": "Who discovered penicillin?",
+      "category": "Science",
+      "difficulty": "hard",
+      "timeLimit": 25,
+      "answers": [
+        { "id": "a1", "text": "Marie Curie", "isCorrect": false },
+        { "id": "a2", "text": "Alexander Fleming", "isCorrect": true },
+        { "id": "a3", "text": "Louis Pasteur", "isCorrect": false },
+        { "id": "a4", "text": "Isaac Newton", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q15",
+      "question": "What is the longest river in the world?",
+      "category": "Geography",
+      "difficulty": "medium",
+      "timeLimit": 20,
+      "answers": [
+        { "id": "a1", "text": "Amazon River", "isCorrect": false },
+        { "id": "a2", "text": "Nile River", "isCorrect": true },
+        { "id": "a3", "text": "Yangtze River", "isCorrect": false },
+        { "id": "a4", "text": "Mississippi River", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q16",
+      "question": "Which element has the chemical symbol 'O'?",
+      "category": "Science",
+      "difficulty": "easy",
+      "timeLimit": 15,
+      "answers": [
+        { "id": "a1", "text": "Oxygen", "isCorrect": true },
+        { "id": "a2", "text": "Gold", "isCorrect": false },
+        { "id": "a3", "text": "Osmium", "isCorrect": false },
+        { "id": "a4", "text": "Oganesson", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q17",
+      "question": "Who was the first person to walk on the Moon?",
+      "category": "History",
+      "difficulty": "easy",
+      "timeLimit": 15,
+      "answers": [
+        { "id": "a1", "text": "Buzz Aldrin", "isCorrect": false },
+        { "id": "a2", "text": "Neil Armstrong", "isCorrect": true },
+        { "id": "a3", "text": "Yuri Gagarin", "isCorrect": false },
+        { "id": "a4", "text": "Michael Collins", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q18",
+      "question": "What is the largest planet in our solar system?",
+      "category": "Science",
+      "difficulty": "easy",
+      "timeLimit": 15,
+      "answers": [
+        { "id": "a1", "text": "Saturn", "isCorrect": false },
+        { "id": "a2", "text": "Jupiter", "isCorrect": true },
+        { "id": "a3", "text": "Neptune", "isCorrect": false },
+        { "id": "a4", "text": "Uranus", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q19",
+      "question": "Which language has the most native speakers in the world?",
+      "category": "Culture",
+      "difficulty": "medium",
+      "timeLimit": 20,
+      "answers": [
+        { "id": "a1", "text": "English", "isCorrect": false },
+        { "id": "a2", "text": "Spanish", "isCorrect": false },
+        { "id": "a3", "text": "Mandarin Chinese", "isCorrect": true },
+        { "id": "a4", "text": "Hindi", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q20",
+      "question": "In computing, what does 'CPU' stand for?",
+      "category": "Technology",
+      "difficulty": "easy",
+      "timeLimit": 15,
+      "answers": [
+        { "id": "a1", "text": "Central Process Unit", "isCorrect": false },
+        { "id": "a2", "text": "Central Processing Unit", "isCorrect": true },
+        { "id": "a3", "text": "Computer Personal Unit", "isCorrect": false },
+        { "id": "a4", "text": "Central Peripheral Unit", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q21",
+      "question": "What is the hardest natural substance on Earth?",
+      "category": "Science",
+      "difficulty": "medium",
+      "timeLimit": 20,
+      "answers": [
+        { "id": "a1", "text": "Diamond", "isCorrect": true },
+        { "id": "a2", "text": "Quartz", "isCorrect": false },
+        { "id": "a3", "text": "Iron", "isCorrect": false },
+        { "id": "a4", "text": "Granite", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q22",
+      "question": "Which continent is known as the 'Dark Continent'?",
+      "category": "Geography",
+      "difficulty": "medium",
+      "timeLimit": 20,
+      "answers": [
+        { "id": "a1", "text": "Africa", "isCorrect": true },
+        { "id": "a2", "text": "Asia", "isCorrect": false },
+        { "id": "a3", "text": "South America", "isCorrect": false },
+        { "id": "a4", "text": "Antarctica", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q23",
+      "question": "Which scientist proposed the theory of relativity?",
+      "category": "Science",
+      "difficulty": "medium",
+      "timeLimit": 20,
+      "answers": [
+        { "id": "a1", "text": "Isaac Newton", "isCorrect": false },
+        { "id": "a2", "text": "Albert Einstein", "isCorrect": true },
+        { "id": "a3", "text": "Nikola Tesla", "isCorrect": false },
+        { "id": "a4", "text": "Galileo Galilei", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q24",
+      "question": "In which city is the Statue of Liberty located?",
+      "category": "Geography",
+      "difficulty": "easy",
+      "timeLimit": 15,
+      "answers": [
+        { "id": "a1", "text": "Washington D.C.", "isCorrect": false },
+        { "id": "a2", "text": "New York City", "isCorrect": true },
+        { "id": "a3", "text": "Boston", "isCorrect": false },
+        { "id": "a4", "text": "Philadelphia", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q25",
+      "question": "Who developed the theory of evolution by natural selection?",
+      "category": "Science",
+      "difficulty": "hard",
+      "timeLimit": 25,
+      "answers": [
+        { "id": "a1", "text": "Gregor Mendel", "isCorrect": false },
+        { "id": "a2", "text": "Charles Darwin", "isCorrect": true },
+        { "id": "a3", "text": "Louis Pasteur", "isCorrect": false },
+        { "id": "a4", "text": "Alfred Wallace", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q26",
+      "question": "Which instrument measures atmospheric pressure?",
+      "category": "Science",
+      "difficulty": "medium",
+      "timeLimit": 20,
+      "answers": [
+        { "id": "a1", "text": "Thermometer", "isCorrect": false },
+        { "id": "a2", "text": "Barometer", "isCorrect": true },
+        { "id": "a3", "text": "Hygrometer", "isCorrect": false },
+        { "id": "a4", "text": "Altimeter", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q27",
+      "question": "What is the currency of Japan?",
+      "category": "Economics",
+      "difficulty": "easy",
+      "timeLimit": 15,
+      "answers": [
+        { "id": "a1", "text": "Won", "isCorrect": false },
+        { "id": "a2", "text": "Yen", "isCorrect": true },
+        { "id": "a3", "text": "Yuan", "isCorrect": false },
+        { "id": "a4", "text": "Dollar", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q28",
+      "question": "Which artist painted 'The Starry Night'?",
+      "category": "Art",
+      "difficulty": "medium",
+      "timeLimit": 20,
+      "answers": [
+        { "id": "a1", "text": "Vincent van Gogh", "isCorrect": true },
+        { "id": "a2", "text": "Claude Monet", "isCorrect": false },
+        { "id": "a3", "text": "Salvador Dali", "isCorrect": false },
+        { "id": "a4", "text": "Pablo Picasso", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q29",
+      "question": "Which gas do plants absorb from the atmosphere during photosynthesis?",
+      "category": "Science",
+      "difficulty": "easy",
+      "timeLimit": 15,
+      "answers": [
+        { "id": "a1", "text": "Oxygen", "isCorrect": false },
+        { "id": "a2", "text": "Carbon Dioxide", "isCorrect": true },
+        { "id": "a3", "text": "Nitrogen", "isCorrect": false },
+        { "id": "a4", "text": "Hydrogen", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q30",
+      "question": "Which famous scientist invented the telephone?",
+      "category": "Technology",
+      "difficulty": "medium",
+      "timeLimit": 20,
+      "answers": [
+        { "id": "a1", "text": "Alexander Graham Bell", "isCorrect": true },
+        { "id": "a2", "text": "Thomas Edison", "isCorrect": false },
+        { "id": "a3", "text": "Nikola Tesla", "isCorrect": false },
+        { "id": "a4", "text": "Samuel Morse", "isCorrect": false }
+      ]
+    }
+  ]
+}
