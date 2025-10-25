@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@codearemo/livemenu-ui": "github:codearemo/livemenu-ui",
     "@reduxjs/toolkit": "^2.9.0",
     "lucide-react": "^0.545.0",
     "react": "^19.1.1",
